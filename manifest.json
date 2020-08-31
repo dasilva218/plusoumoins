@@ -13,7 +13,7 @@
         "sizes": "512x512"
       }
     ],
-    "start_url": "/index.html",
+    "start_url": "https://dasilva218.github.io/plusoumoins/",
     "background_color": "#0ff",
     "display": "standalone",
     "theme_color": "#0ff"
