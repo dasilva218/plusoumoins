@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0ff"/>
+    <link rel="manifest" href="manifest.json">
+    <script>
+        //if browser support service worker
+        if('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('sw.js');
+        };
+    </script>
+    <title>jeux plus ou moins</title>
+</head>
+
+<body>
+    <main id="mobile">
+        <section class="p-accueil">
+            <h1 class="">bienvenu dans plus ou moins</h1>
+            <p class="">Le principe est de déviner un nombre entre 0 et 100</p>
+            <div class="image"><img class="" src="img/Plan de travail 1.svg" alt="" srcset=""></div>
+            <p class="">pret ?</p>
+            <div class="">
+                <button type="button" class="btn">jouez</button>
+            </div>
+        </section>
+        <section class="p-jeux">
+            <form>
+                <label for="guessField">entrez votre proposition</label>
+                <input type="text" autofocus id="guessField" class="guessField" placeholder="">
+                <input type="button" value="validez" class="guessSubmit">
+            </form>
+            <p class="guesses dresult"></p>
+            <p class="lastResult"></p>
+            <p class="lowOrHi ow"></p>
+        </section>
+    </main>
+    <main id="desktop">
+        <div>
+            <p>Disponible en version Mobile pour l'insant !</p>
+        </div>
+    </main>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script async src="js/script.js"></script>
+</body>
+
+</html>

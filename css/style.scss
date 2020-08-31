@@ -1,0 +1,86 @@
+@mixin taille () {
+    width: 100vw;
+    height: 100vh;
+}
+@mixin html() {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 19px;
+    
+    overflow: hidden;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+html {
+    @include taille();
+    @include html();
+}
+body {
+    @include taille();
+}
+main {
+    position: relative;
+    width: 90vw;
+    height: 100vh;
+}
+.p-accueil {
+    position: absolute;
+    @include taille();
+    background-color: rgba(130, 52, 194, 0.87);
+    > h1{
+        
+        text-align: center;
+        
+    }
+    :nth-child(2){
+        text-indent: justify;
+        text-align: center;
+        margin: 1em auto;
+        width: 17em;
+        background-color: #408d925b;
+        border: 1px solid transparent;
+        box-shadow: 10px 10px 20px #000;
+        
+    }
+    :nth-child(4) {
+        text-align: center;
+        font-size: 1.5em;
+    }
+    
+}
+button {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    box-shadow: 2px 2px 5px #000;
+    box-sizing: border-box;
+    padding: 0.5em 2em;
+    outline: none;
+    color: #ffffff;
+    background-color: #924a92b2;
+    text-transform: uppercase;
+    border: transparent;
+}
+.p-jeux {
+    background-color: #ffffff;
+    @include taille();
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include taille();
+    
+}
+
+.image {
+    width: 100%;
+    height: 300px;
+    > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 30px -80px;
+    }
+}
+
+
