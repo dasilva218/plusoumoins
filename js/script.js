@@ -13,7 +13,7 @@ let resetButton;
 let terminer;
 
 console.log(randomNumber);
-console.log(resetButton);
+
 /*=======écouteur d'évenement sur le bouton  ========== */
 guessSubmit.addEventListener('click', checkGuess);
 /*=======fonction principale qui gére l'évenement ========== */
@@ -103,4 +103,3 @@ const slide = () => {
 }
 
 btn.addEventListener('click', slide)
-

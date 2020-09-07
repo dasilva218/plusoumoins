@@ -3,7 +3,7 @@ self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open('sw-cache').then(function(cache) {
       // cache any static files that make up the application shell
-      return cache.add('https://dasilva218.github.io/plusoumoins/index.html');
+      return cache.add('index.html');
     })
   );
 });
