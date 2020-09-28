@@ -12,7 +12,7 @@ let guessCount = 1;
 let resetButton;
 let terminer;
 
-console.log(randomNumber);
+
 
 /*=======écouteur d'évenement sur le bouton  ========== */
 guessSubmit.addEventListener('click', checkGuess);
